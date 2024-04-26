@@ -1,0 +1,43 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    background: white;
+  }
+  
+  input, button {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: inherit;
+  }
+  
+  input:focus {
+    border-color: #4885ed;  // Google's blue color
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(72, 133, 237, 0.2);  // A light blue glow when the input is focused
+  }
+  
+  button {
+    background: #4885ed;  // Google's blue color
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #2a56c6;  // A darker blue for when the button is hovered over
+  }
+  
+  button:active {
+    background: #1a3ca6;  // An even darker blue for when the button is clicked
+  }
+  .text-input {
+    text-align: right;  // or right, center, justify
+  }
+  

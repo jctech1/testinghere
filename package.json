@@ -1,0 +1,59 @@
+{
+  "name": "sitebox",
+  "version": "1.0.0",
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "postinstall": "ng build --configuration production",
+    "ng": "ng",
+    "build": "ng build",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "npx ng build --configuration production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/cli": "^16.1.4",
+    "@angular/common": "^16.1.4",
+    "@angular/compiler-cli": "^16.1.4",
+    "@angular/core": "^16.1.4",
+    "@angular/fire": "^7.6.0",
+    "@angular/forms": "^16.1.4",
+    "@angular/platform-browser": "^16.1.4",
+    "@angular/platform-browser-dynamic": "^16.1.4",
+    "@angular/router": "^16.1.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase": "^9.23.0",
+    "firebase-admin": "^11.10.1",
+    "mongoose": "^7.3.2",
+    "path": "^0.12.7",
+    "rxjs": "^7.8.1",
+    "tslib": "^2.6.0",
+    "typescript": "^5.1.6",
+    "uuid": "^9.0.0",
+    "zone.js": "^0.13.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^16.1.4",
+    "@angular/compiler-cli": "^16.1.4",
+    "@types/jasmine": "^4.3.5",
+    "@types/uuid": "^9.0.2",
+    "jasmine-core": "^5.0.1",
+    "karma": "^6.4.2",
+    "karma-chrome-launcher": "^3.2.0",
+    "karma-coverage": "^2.2.1",
+    "karma-jasmine": "^5.1.0",
+    "karma-jasmine-html-reporter": "^2.1.0",
+    "typescript": "^5.1.6"
+  },
+  "engines": {
+    "node": "18.16.1",
+    "npm": "9.7.2"
+  }
+}

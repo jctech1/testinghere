@@ -1,0 +1,7 @@
+<div class="container">
+  <div *ngFor="let item of wishlistItems; index as i">
+    <p>{{ item.productName }}</p>
+    <button (click)="deleteFromWishlist(i)">Delete from wishlist</button>
+    <button (click)="moveToProductList(i)">Move to product list</button>
+  </div>
+</div>

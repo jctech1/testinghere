@@ -1,0 +1,11 @@
+<!-- section-d.component.html -->
+<div class="container">
+  <div>
+    <p>Subtotal: ${{ cartService.calculateSubtotal() }}</p>
+    <p>Precio por peso: ${{ calculateWeightPrice() }}</p>
+    <p>Guia de aduanaje: $15</p>
+    <h1>Precio total: ${{ calculateTotalPrice() }}</h1>
+    <button (click)="addToCartAndNavigate()">Agregar a carrito</button>
+    <button (click)="addToWishlistAndNavigate()">Agregar a wishlist</button>
+  </div>
+</div>

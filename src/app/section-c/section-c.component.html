@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="progress-bar-container" [class.exceeds]="cartService.calculateSubtotal() > 200">
+        <div class="progress-bar" [style.width.%]="calculateFillPercentage()" 
+             aria-valuemin="0" aria-valuemax="100">
+          <span *ngIf="cartService.calculateSubtotal() <= 200">
+            Subtotal: ${{ cartService.calculateSubtotal() }}
+          </span>
+          <span *ngIf="cartService.calculateSubtotal() > 200">
+            Excediste el valor de $200 por ${{ excessAmount() }}
+          </span>
+        </div>
+      </div>
+    </div>
+</div>

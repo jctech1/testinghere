@@ -1,0 +1,17 @@
+<!-- ordenes.component.html 
+
+<div *ngFor="let invoice of invoices">
+  <div *ngFor="let product of invoice.products">
+    <p>Product Name: {{ product.productName }}</p>-->
+  <div *ngFor="let order of orders">
+  <h2>Order Number: {{ order.ordernumber }}</h2>
+  <p>Status: {{ order.status }}</p>
+  <p>Total Cost: {{ order.totalCost }}</p>
+  
+    <div *ngFor="let product of order.products">
+      <p>Product ID: {{ product.product }}</p>
+      <p>Quantity: {{ product.quantity }}</p>
+    
+    <!-- display other product details here -->
+  </div>
+</div>

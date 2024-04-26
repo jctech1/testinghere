@@ -1,0 +1,27 @@
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Details</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let invoice of invoices">
+        <td>{{ invoice._id }}</td>
+        <td>
+          Title: {{ invoice.title }}<br>
+          Price: {{ invoice.price }}<br>
+          URL: <a href="{{ invoice.url }}" target="_blank">link</a><br>
+          <!-- Add more details as needed -->
+        </td>
+        <td>
+          <button (click)="approveInvoice(invoice._id)">Approve</button>
+          <button (click)="rejectInvoice(invoice._id)">Reject</button> <!-- New Reject Button -->
+        </td>
+      </tr>
+      
+      
+    </tbody>
+  </table>
+  

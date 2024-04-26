@@ -1,0 +1,43 @@
+
+<!-- Display registration and login forms only when the user is not logged in -->
+<div class="container" *ngIf="!user">
+  <div class="row">
+    <div class="col">
+      <h2>Register</h2>
+      <form (submit)="onRegister()">
+        <div>
+          <label for="registerEmail">Email:</label>
+          <input type="email" id="registerEmail" [(ngModel)]="registerEmail" name="registerEmail" required>
+        </div>
+        <div>
+          <label for="registerPassword">Password:</label>
+          <input type="password" id="registerPassword" [(ngModel)]="registerPassword" name="registerPassword" required>
+        </div>
+        <button type="submit">Register</button>
+        <div class="social-login">
+          <button type="button" (click)="registerWithGoogle()">Register with Google</button>
+        </div>
+      </form>
+    </div>
+    <div class="col">
+      <h2>Login</h2>
+      <form (submit)="onLogin()">
+        <div>
+          <label for="loginEmail">Email:</label>
+          <input type="email" id="loginEmail" [(ngModel)]="loginEmail" name="loginEmail" required>
+        </div>
+        <div>
+          <label for="loginPassword">Password:</label>
+          <input type="password" id="loginPassword" [(ngModel)]="loginPassword" name="loginPassword" required>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Display navigation bar and rest of the site only when the user is logged in -->
+<div *ngIf="user">
+  <!-- Navigation bar... -->
+  <!-- Rest of the site... -->
+</div>

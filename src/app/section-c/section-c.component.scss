@@ -1,0 +1,30 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 20px;
+  background-color: #f5f5f5;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #007bff;
+  transition: width 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.progress-bar-container.exceeds .progress-bar {
+  background-color: red;
+}
+
+.box-image img {
+  max-width: 30%; /* Adjust as needed */
+  height: auto; /* This will maintain the aspect ratio of the image */
+}

@@ -1,0 +1,35 @@
+.container {
+  background-color: #ADD8E6; /* Light blue background */
+  display: flex; /* Make the forms appear side by side */
+  justify-content: center; /* Center the forms horizontally */
+  padding: 20px; /* Add some space around the forms */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Add a shadow for a "floating" effect */
+}
+
+.row {
+  display: flex; /* Make the columns appear side by side */
+  justify-content: space-around; /* Add some space between the columns */
+  width: 100%; /* Use the full width */
+}
+
+h2 {
+  color: #333; /* Dark text for contrast */
+}
+
+button {
+  background-color: #007BFF; /* Blue buttons */
+  color: white; /* White text */
+  padding: 10px; /* Some padding */
+  border: none; /* Remove border */
+  cursor: pointer; /* Add a hand cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darken the button color on hover */
+}
+
+.social-login {
+  margin-top: 20px; /* Add some space above the social login button */
+}

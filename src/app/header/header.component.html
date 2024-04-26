@@ -1,0 +1,34 @@
+<header>
+  <div class="header-container">
+    <div class="logo-container">
+      <a routerLink="/">
+      
+        <img src="/assets/img/logoJCBox.png" alt="importar de usa" class="logo"> <!-- replace with your logo -->
+      </a>
+      </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li *ngIf="!user" class="dropdown">
+          <a routerLink="/register">Login</a>
+          
+        </li>
+        
+        <li *ngIf="user" class="dropdown user-logged-in">
+          <a href="#">{{ user.displayName }}</a>
+          <div class="dropdown-content">
+            <a routerLink="/account">Cuenta</a>
+            <a routerLink="/ordenes">Ordenes</a>
+            <a routerLink="/wishlist">Lista de deseos</a>
+            <a routerLink="/tracking">Rastreo</a>
+            <a href="#" (click)="logout()">Logout</a>
+          </div>
+        </li>
+        <li *ngIf="isAdmin"><a routerLink="/admin">Admin</a></li> <!-- Add this line -->
+        <li><a routerLink="/carrito">Carrito</a></li> <!-- Added routerLink to Carrito -->
+        <li><a href="#">redes</a></li> 
+      </ul>
+    </nav>
+  </div>
+</header>
+

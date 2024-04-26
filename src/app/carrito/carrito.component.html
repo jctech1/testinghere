@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="invoice-header">
+    <h1>Invoice</h1>
+    <p>Order Number: {{ orderNumber }}</p>
+    <p>Order Date: {{ orderDate }}</p>
+  </div>
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Qty</th>
+        <th scope="col">Item</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of cartItems">
+        <td>{{ product.quantity }}</td>
+        <td>{{ product.productName }}</td>
+        <td>${{ cartService.calculateProductSubtotal(product) }}</td> <!-- Change here -->
+      </tr>
+    </tbody>
+  </table>
+  <p>Precio por peso: ${{ pesoPrice }}</p>
+  <p>Guia de aduanaje: ${{ guiaAduanaje }}</p>
+  <h2>Precio total: ${{ totalPrice | number:'1.2-2' }}</h2>
+ 
+  <button (click)="makeOrder()">Make Order</button>
+</div>
